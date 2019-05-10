@@ -1,0 +1,40 @@
+.header{
+  height: 100vh;
+  background-image: url('../images/backgr.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.searchTour{
+  position: absolute;
+  top: 30%;
+  margin: auto;
+  padding: 2em;
+  background: rgba(51, 204, 255, 0.79);
+  width: 65%;
+}
+
+.searchTour span{
+  color: white;
+}
+
+.empty{
+  height: 100vh
+}
+
+
+.social_network a i {
+    color: #222!important;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.contacts li{
+  list-style-type: none;
+}
+
+.prefooter{
+  padding: 2em;
+}

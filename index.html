@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Travel company</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Главная</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Горячие туры</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Раннее бронирование</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">О компании</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <header class="header">
+      <div class="container">
+        <div class="row searchTour">
+          <form class="col-12">
+            <div class="row form-group">
+              <span class="col-sm-2 col-form-label" for="cityFrom">Из</span>
+              <select class="custom-select col-sm-10" id="cityFrom">
+                <option value="">Москвы</option>
+                <option value="">Новосибирска</option>
+                <option value="">Санкт-Петербурга</option>
+                <option value="">Екатеринбурга</option>
+              </select>
+            </div>
+
+            <div class="row form-group">
+              <div class="col">
+                <input type="text" class="form-control" value="" placeholder="Страна, город или отель...">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col">
+                <span class="col-form-label" for="flyOut">Дата вылета:</span>
+                <input type="date" value="" id="flyOut" class="form-control">
+              </div>
+              <div class="col">
+                <span class="col-form-label" for="flyBack">Дата возвращения:</span>
+                <input type="date" value="" id="flyBack" class="form-control">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col">
+                <span class="col-form-label" for="numMature">Взрослых:</span>
+                <select class="custom-select" id="numMature">
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                </select>
+              </div>
+              <div class="col">
+                <span class="col-form-label" for="numChildren">Детей:</span>
+                <select class="custom-select" id="numChildren">
+                  <option value="">нет</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                </select>
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col">
+                <span class="col-sm-2 col-form-label" for="hotelRaiting">Класс отеля:</span>
+                <select class="custom-select col-sm-10" id="hotelRaiting">
+                  <option value="">1*</option>
+                  <option value="">2*</option>
+                  <option value="">3*</option>
+                  <option value="">4*</option>
+                  <option value="">5*</option>
+                </select>
+              </div>
+              <div class="col">
+                <span class="col-sm-2 col-form-label" for="feed">Питание от:</span>
+                <select class="custom-select col-sm-10" id="feed">
+                  <option value="">Любое</option>
+                  <option value="">BB - Только Завтрак</option>
+                  <option value="">HB - Завтрак, Ужин</option>
+                  <option value="">FB - Полный Пансион</option>
+                  <option value="">AI - Все Включено</option>
+                  <option value="">UAI - Ультра Все Включено</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary">Найти туры</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <p style="text-align: center; font-size: 35px">Новости</p>
+        <div class="empty">
+
+        </div>
+      </div>
+    </main>
+    <footer style="background-color: #5B6E8C">
+      <div class="prefooter">
+        <div class="container">
+          <div class="row">
+            <div class="social_network col-sm-6 d-flex justify-content-around">
+              <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-sm-6 contacts">
+              <p style="text-align: center">Контакты</p>
+              <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i></li>
+                <li><i class="fa fa-phone-square" aria-hidden="true"></i></li>
+                <li><i class="fa fa-envelope-square" aria-hidden="true"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
