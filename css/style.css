@@ -1,6 +1,6 @@
 .header{
   height: 100vh;
-  background-image: url('../images/backgr.jpg');
+  background-image: url('../images/backgr2.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -9,10 +9,40 @@
 .searchTour{
   position: absolute;
   top: 30%;
-  margin: auto;
+  left: 25%;
   padding: 2em;
-  background: rgba(51, 204, 255, 0.79);
-  width: 65%;
+  background: rgba(178, 174, 153, 0.69);
+  width: 50%;
+  border-radius: 2%;
+}
+
+@media only screen and (max-width: 768px){
+  .searchTour{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    margin: auto;
+    padding: 0em;
+    background: rgba(178, 174, 153, 0.69);
+    width: 90%;
+    border-radius: 0%;
+  }
+}
+
+.navbar{
+  background-color: rgba(33, 93, 148, 0.5);
+
+}
+
+/*.navbar-nav, .nav-item, .nav-link, .navbar-brand{
+  color: white!important;
+}*/
+
+.location{
+  color: white;
+}
+.location:hover{
+  text-decoration: underline;
 }
 
 .searchTour span{
@@ -20,7 +50,12 @@
 }
 
 .empty{
-  height: 100vh
+  /*height: 100vh;*/
+  padding-bottom: 2em;
+}
+
+main .row{
+  padding-top: 2em;
 }
 
 
@@ -31,10 +66,62 @@
     border-radius: 50%;
 }
 
+.social_head{
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 22px;
+  font-weight: 300;
+  border-bottom: 1px solid #73859E;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+  .prefooter h5 {
+    font-size: 15px!important;
+  }
+}
+
+.city-list{
+  list-style: none;
+  padding: 0px;
+}
+
+.social_network_icons{
+  padding-top: 15px;
+  padding-bottom: 15px
+}
+
+
 .contacts li{
   list-style-type: none;
+  padding: 0.3em 0em;
+  color: white;
 }
 
 .prefooter{
   padding: 2em;
+}
+
+.alert{
+  position: absolute;
+  top: 23px;right: 0;left: 0.9em;bottom: 0;
+  z-index: 20;
+  background: white;
+  border-radius: 0%;
+}
+
+.star{
+  width: 20px;
+  height: 20px;
+  background-image: url('../images/star.png');
+  background-repeat: no-repeat;
+}
+
+.star:hover{
+  background-image: url('../images/star-c.png');
+}
+
+.starActive{
+  background-image: url('../images/star-c.png');
 }
