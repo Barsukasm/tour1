@@ -30,7 +30,7 @@
 }
 
 .navbar{
-  background-color: rgba(33, 93, 148, 0.5);
+  background-color: rgba(33, 93, 148, 1);
 
 }
 
@@ -116,6 +116,7 @@ main .row{
   height: 20px;
   background-image: url('../images/star.png');
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .star:hover{
